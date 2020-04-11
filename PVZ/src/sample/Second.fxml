@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="main_screen" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="379.0" prefWidth="626.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Second">
+   <children>
+      <ImageView fx:id="background" fitHeight="400.0" fitWidth="625.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../final1.jpg" />
+         </image>
+      </ImageView>
+      <GridPane fx:id="GridPane" layoutX="163.0" layoutY="41.0" onMousePressed="#PlacePlant" prefHeight="298.0" prefWidth="447.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="86.4000244140625" minWidth="10.0" prefWidth="49.4000244140625" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="205.5999755859375" minWidth="0.0" prefWidth="42.19996032714844" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="225.6000213623047" minWidth="0.0" prefWidth="50.20003967285156" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="139.20001220703125" minWidth="0.0" prefWidth="47.599999999999966" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="139.20001220703125" minWidth="0.0" prefWidth="57.19999999999999" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="176.4000244140625" minWidth="10.0" prefWidth="43.600012207031284" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="153.4000244140625" minWidth="10.0" prefWidth="54.5999755859375" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="139.20001220703125" minWidth="10.0" prefWidth="40.79998779296875" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="139.20001220703125" minWidth="10.0" prefWidth="73.5999755859375" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="53.599981689453124" minHeight="10.0" prefHeight="51.19998779296875" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="62.60001220703125" minHeight="10.0" prefHeight="58.400012207031246" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="61.59999389648439" minHeight="10.0" prefHeight="61.59999389648439" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="58.4000244140625" minHeight="10.0" prefHeight="54.4000244140625" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="53.5999755859375" minHeight="10.0" prefHeight="53.5999755859375" vgrow="SOMETIMES" />
+         </rowConstraints>
+      </GridPane>
+      <ImageView fx:id="lawn_mover1" fitHeight="42.0" fitWidth="44.0" layoutX="109.0" layoutY="63.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../lawn_mower.gif" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="lawn_mover2" fitHeight="42.0" fitWidth="44.0" layoutX="111.0" layoutY="124.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../lawn_mower.gif" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="lawn_mover3" fitHeight="42.0" fitWidth="44.0" layoutX="109.0" layoutY="182.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../lawn_mower.gif" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="lawn_mover4" fitHeight="42.0" fitWidth="44.0" layoutX="109.0" layoutY="236.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../lawn_mower.gif" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="lawn_mover5" fitHeight="42.0" fitWidth="44.0" layoutX="109.0" layoutY="292.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../lawn_mower.gif" />
+         </image>
+      </ImageView>
+      <Button layoutX="537.0" layoutY="8.0" mnemonicParsing="false" onAction="#ThirdScene" opacity="0.0" prefHeight="30.0" prefWidth="81.0" text="Menu" />
+      <Text fx:id="time" layoutX="203.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="101.20002746582031">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text fx:id="SunToken" accessibleText="0" layoutX="70.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" wrappingWidth="51.092308044433594">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <AnchorPane fx:id="level_screen" prefHeight="379.0" prefWidth="625.0" style="-fx-background-color: black;" visible="false">
+         <children>
+            <ImageView fx:id="menu_image" fitHeight="394.0" fitWidth="329.0" layoutX="144.0" layoutY="1.0" opacity="0.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../output-onlinepngtools%20(1).png" />
+               </image>
+            </ImageView>
+            <Text fx:id="level_text1" fill="#f5e9e9" layoutX="146.0" layoutY="111.0" opacity="0.0" strokeType="OUTSIDE" strokeWidth="0.0" visible="false" wrappingWidth="332.45115661621094">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Text>
+            <Text fx:id="level_text2" fill="#f5e9e9" layoutX="71.0" layoutY="215.0" opacity="0.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You have successfully unlocked Plant" visible="false" wrappingWidth="482.0511932373047">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <Button fx:id="level_continue" layoutX="132.0" layoutY="286.0" mnemonicParsing="false" onAction="#continue_level" opacity="0.0" prefHeight="26.0" prefWidth="94.0" style="-fx-background-color: white;" text="Continue" textFill="#c52323e8" visible="false" />
+            <Button fx:id="game_exit" layoutX="193.0" layoutY="312.0" mnemonicParsing="false" onAction="#exit_level" opacity="0.0" prefHeight="38.0" prefWidth="230.0" style="-fx-background-color: white;" text="ExitFromGame" textFill="#c52323e8" visible="false" />
+            <Button fx:id="level_exit" layoutX="404.0" layoutY="296.0" mnemonicParsing="false" onAction="#exit_level" opacity="0.0" prefHeight="26.0" prefWidth="94.0" style="-fx-background-color: white;" text="Exit" textFill="#c52323e8" visible="false" />
+            <Button fx:id="game_continue" layoutX="233.0" layoutY="221.0" mnemonicParsing="false" onAction="#continue_game" opacity="0.0" prefHeight="26.0" prefWidth="153.0" style="-fx-background-color: white;" text="BackToGame" textFill="#c52323e8" visible="false" />
+            <Button fx:id="save_game" layoutX="233.0" layoutY="259.0" mnemonicParsing="false" opacity="0.0" prefHeight="20.0" prefWidth="154.0" style="-fx-background-color: white;" text="SaveGame" textFill="#c52323e8" visible="false" />
+         </children>
+      </AnchorPane>
+      <Button fx:id="SunFlower" layoutX="14.0" layoutY="56.0" mnemonicParsing="false" onAction="#BuySunFlower" opacity="0.0" prefHeight="26.0" prefWidth="38.0" text="SunFlower" />
+      <Button fx:id="Potato" layoutX="14.0" layoutY="175.0" mnemonicParsing="false" onAction="#BuyPotato" opacity="0.0" prefHeight="26.0" prefWidth="38.0" text="Potato" />
+      <Button fx:id="Pea" layoutX="14.0" layoutY="130.0" mnemonicParsing="false" onAction="#BuyPeaShooter" opacity="0.0" prefHeight="26.0" prefWidth="38.0" text="Pea" />
+      <Button fx:id="Cherry" layoutX="14.0" layoutY="93.0" mnemonicParsing="false" onAction="#BuyCherry" opacity="0.0" prefHeight="26.0" prefWidth="38.0" text="Cherry" />
+   </children>
+</AnchorPane>
